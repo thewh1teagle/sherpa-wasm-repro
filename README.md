@@ -59,6 +59,14 @@ Install [wasm-pack](https://rustwasm.github.io/wasm-pack)
 RUSTFLAGS="--cfg=web_sys_unstable_apis --Z wasm_c_abi=spec" rustup run nightly wasm-pack build --target web
 ```
 
+## Run index.html
+
+```console
+python3 -m http.server 80
+```
+
+Open http://localhost
+
 ## Related issues
 
 - https://github.com/rustwasm/wasm-pack/issues/621#issuecomment-481703973
@@ -67,11 +75,3 @@ RUSTFLAGS="--cfg=web_sys_unstable_apis --Z wasm_c_abi=spec" rustup run nightly w
 - https://github.com/pykeio/ort/issues/75
 - https://github.com/rustwasm/wasm-bindgen/issues/2215#issuecomment-648205478
 - https://stackoverflow.com/questions/78556000/how-you-can-link-a-rust-library-with-c-c-and-wasm-bindgen-for-the-wasm32-unkno
-
-## Run index.html
-
-```console
-python3 -m http.server 80
-```
-
-Open http://localhost
