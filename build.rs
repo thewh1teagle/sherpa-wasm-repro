@@ -10,7 +10,7 @@ fn main() {
 
     // Link sherpa
     println!("cargo:rustc-link-lib=static=sherpa-onnx-c-api");
-    println!("cargo:rustc-link-lib=static=sherpa-onnx-core");
+    // println!("cargo:rustc-link-lib=static=sherpa-onnx-core");
     // println!("cargo:rustc-link-lib=static=kaldi-decoder-core");
     // println!("cargo:rustc-link-lib=static=kaldi-native-fbank-core");
     // println!("cargo:rustc-link-lib=static=sherpa-onnx-fst");
